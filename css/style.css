@@ -1,0 +1,79 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+}
+
+header {
+    height: 20vh;
+}
+
+footer {
+    border: 2px solid black; /* Bordure noire de 2 pixels */
+    background-color: rgb(161, 19, 19); /* Fond rouge */
+    color: black; /* Texte noir */
+    padding: 10px; /* Espacement interne pour améliorer l'apparence */
+    text-align: center;
+}
+
+.image-container {
+    float: left;
+    margin: 16px;
+}
+
+.fixed-connexion {
+    position: fixed;
+    top: 10px; /* Ajustez la valeur de top selon vos besoins */
+    right: 10px; /* Ajustez la valeur de right selon vos besoins */
+    z-index: 1000; /* Pour s'assurer que le bouton reste au-dessus du contenu */
+}
+
+.fixed-connexion-btn {
+    background-color: rgb(161, 19, 19) !important;
+    color: #fff; /* Couleur du texte */
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100%; /* 100% de la hauteur du conteneur parent (container-fluid) */
+}
+
+ul li {
+    border: 1px solid #000;
+    padding: 2px;
+    margin-bottom: 5px;
+    list-style: none;
+    background-color: rgb(161, 19, 19);
+    height: 40px;
+}
+
+ul li a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+ul li a:hover {
+    color: white !important;
+    background-color: rgb(161, 19, 19) !important; 
+}
+
+/* Sous-menu déroulant */
+.dropdown-menu a {
+    color: black !important;
+    background-color: rgb(161, 19, 19) !important; /* Couleur de fond du sous-menu déroulant */
+}
+
+/* Au survol du sous-menu déroulant */
+.dropdown-menu a:hover {
+    color: white !important;
+    background-color: rgb(161, 19, 19) !important;
+}
+
+/* Image des annonce de voitures d'occasion */
+.voiture {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
