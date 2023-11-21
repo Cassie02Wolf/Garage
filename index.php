@@ -22,7 +22,7 @@
     </div>
 </header>
 
-<!-- Ajoutez le formulaire de connexion avec style="display: none;" pour le cacher initialement -->
+<!-- Formulaire de connexion avec style="display: none;" pour le cacher initialement -->
 <section id="connexion" class="container mb-4" style="display: none;">
     <div class="row">
         <div class="col-12 text-center p-8">
@@ -31,14 +31,14 @@
     </div>
     <div class="row">
         <div class="col-lg-6 mx-auto">
-            <form id="formConnexion" action="" method="post">
+            <form id="formConnexion" action="./views/connexion.php" method="POST">
                 <div class="form-group">
                     <label for="email">Email :</label>
                     <input type="email" name="email" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="motDePasse">Mot de passe :</label>
-                    <input type="password" name="motDePasse" class="form-control" required>
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" name="password" class="form-control" required>
                 </div>
                 <button type="submit" class="btn btn-primary">Se connecter</button>
                 <button type="button" onclick="cacherFormulaire()" class="btn btn-secondary">Retour</button>

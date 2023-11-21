@@ -1,9 +1,9 @@
 <?php
 
 $dbhost = $_ENV['DB_HOST'] = 'localhost';
-$dbname = $_ENV['DB_NAME'] = 'sgbd.sql';
-$dbemail = $_ENV['DB_EMAIL'] = 'parrot-vincent@hotmail.fr';
-$dbpassword = $_ENV['DB_PASSWORD'] = '123456';
+$dbname = $_ENV['DB_NAME'] = 'sgbd';
+$dbuser = $_ENV['DB_USER'] = 'root';
+$dbpassword = $_ENV['DB_PASSWORD'] = '';
 
 try {
     $pdo = new PDO("mysql:$dbhost;dbname:$dbname",$dbemail,$dbpassword);
@@ -51,4 +51,6 @@ try {
     }
 
 }
+
+*/
 ?>
